@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context=".EditAddClientActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lblFirstAndLastName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/txtFirstAndLastName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtBirthdate"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFirstAndLastName"
+        android:layout_below="@+id/txtFirstAndLastName"
+        android:text="@string/lblDateOfBirth"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/btnPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtFirstAndLastName"
+        android:layout_below="@+id/txtFirstAndLastName"
+        android:onClick="btnPickDateClick"
+        android:src="@drawable/browse" />
+
+        <RadioButton
+            android:id="@+id/rdoMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBirthdate"
+            android:layout_toLeftOf="@+id/txtBirthdate"
+            android:checked="true"
+            android:onClick="rdoGenderClick" />
+
+        <TextView
+            android:id="@+id/lblMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rdoMale"
+            android:layout_alignBottom="@+id/rdoMale"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="@string/lblMale"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rdoMale"
+            android:layout_alignBottom="@+id/rdoMale"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lblPicture"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageButton
+            android:id="@+id/btnClientPic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignRight="@+id/btnPickDate"
+            android:layout_alignTop="@+id/rdoMale"
+            android:layout_below="@+id/btnPickDate"
+            android:src="@drawable/nullpic"
+            android:paddingTop="5dp"
+            android:onClick="btnClientPicClick" />
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblFemale"
+            android:layout_centerVertical="true"
+            android:text="@string/lblAddress"
+            android:layout_below="@+id/btnClientPic"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/lblAddress"
+            android:layout_alignRight="@+id/btnClientPic"
+            android:layout_below="@+id/lblAddress" />
+
+        <TextView
+            android:id="@+id/lblPostalcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtAddress"
+            android:layout_below="@+id/txtAddress"
+            android:text="@string/lblPostalcode"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtPostalcode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/txtAddress"
+            android:layout_below="@+id/txtAddress"
+            android:layout_toRightOf="@+id/txtBirthdate"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/lblNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblPostalcode"
+            android:layout_below="@+id/txtPostalcode"
+            android:layout_marginTop="5dp"
+            android:text="@string/lblNotes"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lblNotes"
+            android:layout_toRightOf="@+id/lblPostalcode"
+            android:ems="10"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNotes"
+            android:layout_toLeftOf="@+id/txtBirthdate"
+            android:text="@string/btnCancel"
+            android:onClick="btnCancelClick" />
+
+        <Button
+            android:id="@+id/btnAddClient"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancel"
+            android:layout_alignBottom="@+id/btnCancel"
+            android:layout_toRightOf="@+id/lblPicture"
+            android:text="@string/btnAddClient"
+            android:onClick="btnAddClientClick" />
+
+        <RadioButton
+            android:id="@+id/rdoFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lblAddress"
+            android:layout_toLeftOf="@+id/txtBirthdate"
+            android:onClick="rdoGenderClick" />
+
+        <TextView
+            android:id="@+id/lblFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblMale"
+            android:layout_below="@+id/rdoMale"
+            android:text="@string/lblFemale"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

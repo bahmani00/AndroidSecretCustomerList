@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Secret Customer List</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblPassword">Enter password to access application</string>
+    <string name="btnGetAccess">Get Access</string>
+    <string name="lblChooseAction">Choose an action</string>
+    <string name="btnAccessClientList">Access client list</string>
+    <string name="btnAccessClientList2">Access client list2</string>
+    <string name="btnAddNewClient">Add new client</string>
+    <string name="btnChangePassword">Change access password</string>
+    <string name="lblClientList">Client List</string>
+    <string name="lblFirstAndLastName">First and last name</string>
+    <string name="lblDateOfBirth">Date of birth</string>
+    <string name="lblMale">Male</string>
+    <string name="lblFemale">Female</string>
+    <string name="lblPicture">Picture</string>
+    <string name="lblAddress">Address</string>
+    <string name="lblPostalcode">Postal code</string>
+    <string name="lblNotes">Notes</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnAddClient">Add client</string>
+    <string name="lblChangePassword">Change password</string>
+    <string name="lblOldPassword">Old password</string>
+    <string name="lblNewPasswordTwice">New password twice:</string>
+    <string name="lblViewOrEditClient">View or edit client</string>
+    <string name="btnSaveChanges">Save changes</string>
+    <string name="btnBack">Back</string>
+    <string name="title_activity_action_list">ActionListActivity</string>
+    <string name="title_activity_client_list">Client List</string>
+    <string name="title_activity_add_client">Add a new Client</string>
+    <string name="title_activity_edit_client">View or Edit Client</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="titlePassword">Password</string>
+    <string name="summaryPassword">Please enter your Password</string>
+    <string name="wrongPassword">Your input password is wrong!</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_edit_add_client">EditAddClientActivity</string>
+    <string name="passwordChangedSuccessfully">Password changed successfully</string>
+    <string name="title_activity_client_list_activity2">ClientListActivity2</string>
+    <string name="title_activity_client_list_item">ClientListItem</string>
+
+</resources>
